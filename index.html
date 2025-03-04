@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>R. Pavithkumar - DevOps Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 16px;
+            color: #666;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li {
+            display: inline-block;
+            background-color: #ddd;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .projects-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project-card {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Contact Form Styles */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        form button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background-color: #45a049;
+        }
+        /* Profile Image Styles */
+        .profile-image {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        /* Education Section Styles */
+        .education-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin: 0 auto;
+            display: inline-block;
+        }
+        .education-item {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .education-item span {
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .projects-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>R. Pavithkumar</h1>
+        <p>DevOps Enthusiast | AWS Certified | Cloud & Automation Specialist</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <!-- Profile Image -->
+        <img src="myimg.jpg" alt="R. Pavithkumar" class="profile-image">
+        <p>I'm a passionate DevOps learner with hands-on experience in AWS services, cloud infrastructure, and automation tools. My goal is to build scalable, reliable, and efficient systems. I enjoy solving complex problems and optimizing development processes through continuous integration and deployment (CI/CD). Currently, I am focused on improving my AWS skills and learning the latest DevOps practices.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills & Tools</h2>
+        <ul class="skills-list">
+            <li>AWS EC2</li>
+            <li>AWS S3</li>
+            <li>AWS Lambda</li>
+            <li>AWS CloudFormation</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Terraform</li>
+            <li>CI/CD (Jenkins, GitLab CI)</li>
+            <li>Linux & Bash Scripting</li>
+            <li>Version Control (Git)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects-list">
+            <div class="project-card">
+                <h3>Project 1: AWS Deployment Automation</h3>
+                <p>Automated the deployment of a web application using AWS services like EC2, S3, and CloudFormation.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2: Docker Containerization</h3>
+                <p>Containerized an application with Docker and deployed it to Kubernetes for scalable operations.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 3: CI/CD Pipeline</h3>
+                <p>Implemented a CI/CD pipeline with Jenkins to automate testing and deployment of a Node.js app.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li class="education-item">
+                <span>Degree:</span> B.E Electronics and Telecommunication Engineering
+            </li>
+            <li class="education-item">
+                <span>College:</span> Karpagam College of Engineering
+            </li>
+            <li class="education-item">
+                <span>Year:</span> 2022 - 2026 (or specify your graduation year)
+            </li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>If you're interested in collaborating or learning more about my work, feel free to reach out!</p>
+
+        <!-- Contact Form -->
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Email: <a href="pavithramalingam12@gmail.com">your.email@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin">your-linkedin</a></p>
+        <p>GitHub: <a href="https://github.com/your-github">your-github</a></p>
+    </footer>
+</body>
+</html>
